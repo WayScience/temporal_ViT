@@ -7,12 +7,15 @@ from torch.utils.data import Dataset
 
 
 class MNIST_Dataset(Dataset):
-    def __init__(self, image, label, binary=True, number_of_frames=20):
+    def __init__(self, image, label, binary=True, number_of_frames=20, subset=None):
         super(MNIST_Dataset).__init__()
         self.image = image
         self.label = label
         self.binary = binary
         self.number_of_frames = number_of_frames
+        if subset is not None:
+            self.image = self.image[:subset, :]
+            self.label = self.label[:subset]
 
     def __len__(self):
         return self.label.shape[0]

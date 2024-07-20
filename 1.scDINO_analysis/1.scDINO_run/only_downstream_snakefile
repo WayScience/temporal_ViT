@@ -141,7 +141,7 @@ rule extract_labels:
         mem_mb = 4000,
         cores = 4,
     shell:
-        'python -m torch.distributed.launch --nproc_per_node {params.num_gpus} pyscripts/extract_image_labels.py --selected_channels {params.selected_channel_indices} --pretrained_weights {input.path_to_model} --parse_params """{params.script_params}"""'
+        'torchrun --nproc_per_node {params.num_gpus} --standalone pyscripts/extract_image_labels.py --selected_channels {params.selected_channel_indices} --pretrained_weights {input.path_to_model} --parse_params """{params.script_params}"""'
 
 rule compute_CLS_features:
     input:
