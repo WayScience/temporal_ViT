@@ -1,2 +1,2 @@
 # temporal_ViT
-This is the develpment of a temporal ViT using the MNIST dataset
+This is the develpment of a temporal ViT using the MNIST dataset.

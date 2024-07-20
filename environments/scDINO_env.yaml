@@ -1,0 +1,33 @@
+# env file for running scDINO
+name: scDINO_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11 # as specified in the scDINO repo
+  - pip
+  - conda-forge::pyarrow
+  - conda-forge::imageio
+  - conda-forge::ipykernel
+  - conda-forge::jupyter
+  - conda-forge::matplotlib
+  - conda-forge::numba
+  - conda-forge::numpy
+  - conda-forge::opencv
+  - conda-forge::Pillow
+  - conda-forge::pandas # as specified in the scDINO repo
+  - conda-forge::PyYAML
+  - conda-forge::scikit-image
+  - conda-forge::scikit-learn
+  - conda-forge::seaborn
+  # - conda-forge::cudatoolkit=11.3.0
+  - conda-forge::umap-learn
+  - pip:
+    - catalyst
+    - topo
+    - topometry
+    - tifffile
+    - snakemake==7.20.0 # as specified in the scDINO repo
+    - pulp==2.3
+    - torch
+    - torchvision
