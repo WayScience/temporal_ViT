@@ -1,5 +1,5 @@
 """"
-original code by Xinqiang Ding <xqding@umich.edu>
+original code by Xinqiang Ding <xqding@umich.edu>: https://github.com/xqding/TD-VAE/blob/master/script/prep_data.py
 """
 
 import numpy as np

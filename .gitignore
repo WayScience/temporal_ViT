@@ -163,3 +163,7 @@ cython_debug/
 
 utils/__pycache__/
 data
+
+1.scDINO_analysis/1.scDINO_run/.snakemake
+1.scDINO_analysis/1.scDINO_run/logs
+1.scDINO_analysis/1.scDINO_run/outputdir

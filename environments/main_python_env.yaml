@@ -4,7 +4,6 @@ channels:
 - conda-forge
 
 dependencies:
-# this is restricted to Python 3.8 at this time due to other conflicts
 - conda-forge::python=3.12
 - conda-forge::ipykernel
 - conda-forge::jupyterlab
@@ -17,6 +16,5 @@ dependencies:
 - conda-forge::scikit-learn
 - conda-forge::pytorch
 - conda-forge::torchvision
-# pip
   - pip:
     - mnist
