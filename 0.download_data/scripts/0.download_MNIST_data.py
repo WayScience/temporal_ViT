@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# This noteboook download the MNIST dataset
+# This notebook downloads the MNIST dataset
 
 # In[1]:
 
