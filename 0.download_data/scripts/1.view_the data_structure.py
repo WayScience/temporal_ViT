@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # This notebook looks at the downloaded mnist data and looks into the image dataloader and rolling window data class.
-# Noteably this code is modified from the original code written by original code by Xinqiang Ding <xqding@umich.edu>
+# Noteably, this code is modified from the original code written by Xinqiang Ding <xqding@umich.edu>
 
 # In[1]:
 
