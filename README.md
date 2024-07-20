@@ -1,5 +1,5 @@
 # temporal_ViT
-This is the develpment of a temporal ViT using the MNIST dataset.
+This is the development of a temporal ViT using the MNIST dataset.
 
 ## Setting up the environment
 To set up the environment, you can use the following command:
