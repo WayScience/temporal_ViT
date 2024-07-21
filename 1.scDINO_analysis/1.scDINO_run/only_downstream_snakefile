@@ -91,7 +91,7 @@ rule visualise_attention:
         selected_channel_indices= lambda wildcards: get_channel_number_combi(wildcards.channel_names, channel_dict),
     resources:
         mem_mb = 4000,
-        cores = 4,
+        cores = 8,
     shell:
         'python pyscripts/visualise_attention.py --selected_channels {params.selected_channel_indices} --pretrained_weights {input.path_to_model} --parse_params """{params.script_params}"""'
 
